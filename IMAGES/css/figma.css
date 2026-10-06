@@ -1,0 +1,26 @@
+.my-text{
+    -webkit-text-stroke: 2px white;
+}
+.background{
+    background-image: url("./figma3.jpg");
+}
+.my-textb{
+    -webkit-text-stroke:0.5px white;
+}
+.my-textc{
+    -webkit-text-stroke: 2px white;
+}
+.my-textd{
+    -webkit-text-stroke: 1px white;
+}
+.my-texte{
+    -webkit-text-stroke: 2px white;
+}
+.bbb{
+    background-image: url('../images/figma001.jpg');
+
+    
+}
+.my-textf{
+    -webkit-text-stroke: 2px white;
+}
