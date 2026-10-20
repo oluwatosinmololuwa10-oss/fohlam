@@ -8,11 +8,13 @@
     <script src="./java script/tailwind.js"></script>
     <link rel="stylesheet" href="./IMAGES/css/figma.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script>
-    const btn = document.getElementById("menu-btn");
-    const list = document.getElementById("menu-list");
-    btn.addEventListener("click", () => {
-        list.classList.toggle("hidden");
+   <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const btn = document.getElementById("menu-btn");
+        const list = document.getElementById("menu-list");
+        btn.addEventListener("click", () => {
+            list.classList.toggle("hidden");
+        });
     });
 </script>
 </head>
