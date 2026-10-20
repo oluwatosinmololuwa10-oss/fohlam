@@ -16,12 +16,17 @@
             list.classList.toggle("hidden");
         });
     });
+    const sitesBtn = document.querySelector("#menu-list .group button");
+const sitesMenu = document.getElementById("sites-menu");
+sitesBtn.addEventListener("click", () => {
+    sitesMenu.classList.toggle("hidden");
+});
 </script>
 </head>
 
 <body class="overflow-x-hidden ">
     <div class="bg-black py-3 w-screen pr-3 md:pr-0">
-        <nav class="flex flex-col md:flex-row max-w-7xl mx-auto justify-between  border px-7 py-4 rounded-full   bg-white animate__animated  animate__fadeInLeftBig animate__delay-2s">
+        <nav class="flex flex-col md:flex-row max-w-7xl mx-auto justify-between  border px-7 py-4 rounded-3xl md:rounded-full   bg-white animate__animated  animate__fadeInLeftBig animate__delay-2s">
             <div class="flex flex-row justify-between">
                 <svg width="178" height="43" viewBox="0 0 178 43" fill="none" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -37,22 +42,22 @@
 
                 <button id="menu-btn" class="md:hidden border rounded-full px-4 py-1"> menu</button>
             </div>
-            <ul id="menu-list" class="hidden md:flex  flex-col md:flex-row justify-between items-center gap-4 md:gap-20 mt-4 md:mt-0 text-blue-600">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./Aboutindex.html">About Us</a></li>
-                <li><a href="./service,index.html">Services</a></li>
+            <ul id="menu-list" class="hidden md:flex  flex-col md:flex-row justify-between items-center gap-1 md:gap-20 mt-4 md:mt-0 text-blue-600 w-full md:w-auto border-t md:bottom-0 pt-3 md:pt-0">
+                <li class="w-full md:w-auto"><a class="block py-2" href="index.html">Home</a></li>
+                <li class="w-full md:w-auto"><a class="block py-2" href="./Aboutindex.html">About Us</a></li>
+                <li class="w-full md:w-auto"><a class="block py-2" href="./service,index.html">Services</a></li>
                 <li>
                     <div class="relative group">
-                        <button>Our sites</button>
+                        <button class="py-2">Our sites</button>
                         <div
-                            class="md:hidden md:group-hover:block md:absolute bg-gray-300 rounded-md md:w-57 p-2 justify-between flex-row">
-                            <a class="px-3 py-2 hover:bg-gray-100 " href="./Oyo.html">Oyo</a>
-                            <a class="px-3 py-2 hover:bg-gray-100 " href="./kano.html">Kano</a>
-                            <a class="px-3 py-2 hover:bg-gray-100 " href="./Ogun.html">Ogun</a>
+                            class="hidden md:group-hover:block md:absolute bg-gray-300 rounded-md md:w-57 p-2 md:flex-col"id="sites-menu">
+                            <a class=" block px-3 py-2 hover:bg-gray-100 " href="./Oyo.html">Oyo</a>
+                            <a class=" block px-3 py-2 hover:bg-gray-100 " href="./kano.html">Kano</a>
+                            <a class=" block px-3 py-2 hover:bg-gray-100 " href="./Ogun.html">Ogun</a>
                         </div>
                     </div>
                 </li>
-                <li><a href="./Contact us.html">Contact Us</a></li>
+                <li class="w-full md:w-auto"><a  class="block py-2" href="./Contact us.html">Contact Us</a></li>
             </ul>
             <button class="hidden md:block bg-blue-600 text-white border rounded-full py-3 px-8">CJTronics by Folham</button>
         </nav>
